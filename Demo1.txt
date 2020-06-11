@@ -1,0 +1,18 @@
+
+1. Build the project
+    -creat the folder
+    -add files
+    -connect files
+2. Navigation Bar
+    -2 links and a name
+3. Portfolio item grid
+    -images
+    -titles
+    -description
+    -animations using javascript
+4. About page
+
+note
+- .placeholder gives a div class
+- a href gives a link or route to a page on the website or outside websites
+N.B make sure to check the margin 0px-8pc differenec once you add your website background color

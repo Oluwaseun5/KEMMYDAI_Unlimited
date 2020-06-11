@@ -1,0 +1,144 @@
+/*Master styles*/
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    /* fractional unit */
+}
+
+/* Nav styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.left {
+    display:flex;
+
+}
+
+.navbar > .left > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;   
+    /* the above is to make like an effect when theb button is clicked on, in some sort of fading way */   
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+        color: black;
+}
+
+.navbar > .right > div {
+    color: orange;
+    font-style: underline;
+    font-size: 25px;
+    font-family: ALGERIAN;
+}
+
+/* .active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+.active-nav-link b {
+    color: black !important;
+} */
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    /* this 'relative' position is always required when using the 'absolute' postion 
+    within a code because we are forcing it to be where it is not naturally so the parent element has to be relative for that to work*/
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    /* images are cropped so they sit perfectly with the same size */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* html's format is to place texts below images naturally but the next lines of code aligns it on the image */
+.img-text-wrapper {
+    color: white;
+    position: absolute;
+    top: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* the above means adjusting text from left to right so it's equal */
+    align-items: center;
+    /* the above means adjusting text from top to bottom so it's equal */
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* Needs to be more specific with selector */
+.img-text-wrapper .logo-subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+/* aat first I used just .logo-subtitle {...} before adding what is below
+ the jara there now just allows only text to turn seagreen when the cursor hovers around it*/
+
+.img-text-wrapper:hover .logo-subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* CONTACT PAGE: CHANGES THE LOOK OF THE PICTURE, MAKES THE WORD SIDE BY SIDE WITH IMAGE */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 75%;
+}
+
